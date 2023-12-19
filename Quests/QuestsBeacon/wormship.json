@@ -1,0 +1,85 @@
+{
+  "ItemType": 15,
+  "Id": 7,
+  "StartCondition": 1,
+  "Weight": 0.2,
+  "Requirement": {
+    "Type": 3,
+    "Requirements": [
+      {
+        "Type": 27,
+        "ItemId": 90
+      }
+    ]
+  },
+  "Nodes": [
+    {
+      "Id": 1,
+      "Type": 10,
+      "Message": "$WORM_Message",
+      "Enemy": 4,
+      "Loot": 7,
+      "Actions": [
+        {
+          "TargetNode": 2,
+          "ButtonText": "$WORM_ACTION_Attack"
+        },
+        {
+          "TargetNode": 5,
+          "ButtonText": "$WORM_ACTION_Ignore"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Type": 20,
+      "DefaultTransition": 3,
+      "FailureTransition": 6,
+      "Enemy": 4
+    },
+    {
+      "Id": 3,
+      "Type": 10,
+      "Message": "$MessageCombatReward",
+      "Loot": 7,
+      "Actions": [
+        {
+          "TargetNode": 4,
+          "ButtonText": "$ACTION_Continue"
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Type": 35,
+      "DefaultTransition": 5,
+      "Loot": 7
+    },
+    {
+      "Id": 5,
+      "Type": 40
+    },
+    {
+      "Id": 6,
+      "Type": 10,
+      "Message": "You Died",
+      "Loot": 90,
+      "Actions": [
+        {
+          "TargetNode": 7,
+          "ButtonText": "$ACTION_Continue"
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "Type": 35,
+      "DefaultTransition": 8,
+      "Loot": 90
+    },
+    {
+      "Id": 8,
+      "Type": 41
+    }
+  ]
+}

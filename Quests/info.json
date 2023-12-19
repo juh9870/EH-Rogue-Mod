@@ -1,0 +1,33 @@
+{
+  "ItemType": 15,
+  "Id": 90,
+  "QuestType": 3,
+  "StartCondition": 2,
+  "Weight": 1.0,
+  "Requirement": {
+    "Type": 27,
+    "ItemId": 90
+  },
+  "Nodes": [
+    {
+      "Id": 1,
+      "Type": 10,
+      "Message": "You are dead.                                                                                                                                                                Start new game.",
+      "Actions": [
+        {
+          "TargetNode": 2,
+          "ButtonText": "$ACTION_Continue"
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Type": 30,
+      "DefaultTransition": 3
+    },
+    {
+      "Id": 3,
+      "Type": 41
+    }
+  ]
+}

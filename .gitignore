@@ -1,0 +1,8 @@
+id
+*.ehmod
+
+# DBE
+GameDatabase.exe
+Cyotek.Windows.Forms.ColorPicker.dll
+IonicZlib.dll
+Newtonsoft.Json.dll
